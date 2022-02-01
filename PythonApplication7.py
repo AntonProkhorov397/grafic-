@@ -118,12 +118,12 @@ def vihmavari():
     plt.grid(True)
     plt.show()
 def dinosaur():
-    x1=np.arange(-5.2,4, 0.5)
+    x1=np.arange(-5.2,4,0.5)
     y1=(-1/8)*x1**2+5
     x2=np.arange(4,12,0.5)
     y2=(-5/16)*(x2-8)**2+8
     x3=np.arange(-9,-5,0.5)
-    y3=0.5*(x3+7)**2+3
+    y3=(-0.5)*(x3+7)**2+3
     x4=np.arange(8,12,0.5)
     y4=0.5*(x4-10)**2+1
     x5=np.arange(-5,-1,0.5)
@@ -131,7 +131,7 @@ def dinosaur():
     x6=np.arange(2,6,0.5)
     y6=(x6-4)**2-7
     x7=np.arange(-9,-5,0.5)
-    y7=(-x7-8,x7)
+    y7=(-x7-8)
     x8=np.arange(6,8,0.5)
     y8=3*(x8-7)
     x9=np.arange(-1,2,0.5)
@@ -145,25 +145,31 @@ def dinosaur():
     plt.grid(True)
     plt.show()
 def peshka():
-    x1=np.arange(-2,2,0.5)
-    y1=-0.25*x1**2+13
-    x2=np.arange(-3,-1,0.5)
-    y2=-x2+6
-    x3=np.arange(1,3,0.5)
-    y3=x3+6
-    x4=np.arange(-6,6,0.5)
-    y4=(1/72)*x4**2-6
-    x5=np.arange(-0.5,0.5,0.5)
-    y5=-2*x5**2+13.5
-    x6=np.arange(-7,-6,0.5)
-    y6=2.5*x6+9.5
-    x7=np.arange(6,7,0.5)
-    y7=-2.5*x7+9.5
-    x8=np.arange(-7,7,0.5)
-    y8=-8
-    x9=np.arange(-1,1,0.5)
-    y9=7
-    plt.plot(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,x7,y7,x8,y8,x9,y9)
+    x1=np.arange(-6,-1,0.5)
+    y1=0.5*(x1+6)**2-5.5
+    x2=np.arange(1,6,0.5)
+    y2=0.5*(x2-6)**2-5.5
+    x3=np.arange(-3,3,0.5)
+    y3=(-1/9)*x3**2+10
+    x4=np.arange(-2,2,0.5)
+    y4=(-0.25*x4)**2+13
+    x5=np.arange(-3,-1,0.5)
+    y5=(-x5+6)
+    x6=np.arange(1,3,0.5)
+    y6=x6+6
+    x7=np.arange(-6,6,0.5)
+    y7=(1/72)*x7**2-6
+    x8=np.arange(-0.5,0.5,0.5)
+    y8=(-2*x8)**2+13.5
+    x9=np.arange(-7,-6,0.5)
+    y9=(2.5*x9)+9.5
+    x10=np.arange(6,7,0.5)
+    y10=(-2.5*x10)+9.5
+    x11=np.arange(-7,7,0.5)
+    y11=(-8)
+    x12=np.arange(-1,1,0.5)
+    y12=7
+    plt.plot(x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,x7,y7,x8,y8,x9,y9,x10,y10,x11,y11,x12,y12)
     plt.title('Пешка')
     plt.ylabel('y')
     plt.xlabel('x')
@@ -213,10 +219,10 @@ btn_g.pack(side=LEFT)
 btn_veel=Button(f2,text="Увеличить окно", font="Calibri 26",bg="yellow",command=veel)
 btn_veel.pack(side=TOP)
 var=IntVar()
-r1=Radiobutton(f2,text="Кит", variable=var,var=1, font="Calibri 26",command=vihmavari)
-r2=Radiobutton(f2,text="Зонт", variable=var,var=2,font="Calibri 26",command=dinosaur)
+r1=Radiobutton(f2,text="Кит", variable=var,var=1, font="Calibri 26",command=kala)
+r2=Radiobutton(f2,text="Зонт", variable=var,var=2,font="Calibri 26",command=vihmavari)
 r3=Radiobutton(f2,text="Динозавр", variable=var,var=3,font="Calibri 26",command=dinosaur)
-r4=Radiobutton(f2,text="Пешка", variable=var,var=4,font="Calibri 26",command=dinosaur)
+r4=Radiobutton(f2,text="Пешка", variable=var,var=4,font="Calibri 26",command=peshka)
 r1.pack()
 r2.pack()
 r3.pack()
